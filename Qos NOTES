@@ -1,0 +1,42 @@
+Col_RMSE_Score:N_PCell_RSRP_max_bin: 39876227.80256698
+Col_RMSE_Score:N_PCell_RSRQ_max_bin: 42619142.07801892
+Col_RMSE_Score:N_PCell_RSSI_max_bin: 38535566.01195853
+Col_RMSE_Score:N_SCell_RSRP_max_bin: 34676104.70796031
+Col_RMSE_Score:N_SCell_RSRQ_max_bin: 34779691.55046376
+Col_RMSE_Score:N_SCell_RSSI_max_bin: 34509042.63441481
+
+Using pd.cut
+
+Col_RMSE_Score:N_PCell_RSRP_max_bin: 37635992.01157734
+Col_RMSE_Score:N_PCell_RSRQ_max_bin: 38399407.02935921
+Col_RMSE_Score:N_PCell_RSSI_max_bin: 37296934.02380881
+Col_RMSE_Score:N_SCell_RSRP_max_bin: 31687003.717916273
+Col_RMSE_Score:N_SCell_RSRQ_max_bin: 33635370.4219245
+Col_RMSE_Score:N_SCell_RSSI_max_bin: 32997532.597188666
+
+Using pd.qcut = 10
+
+Cols_RMSE_Score:N_SCell_RSRP_max_bin ,*N_PCell_RSRP_Noise ,**N_SCell_RSSI_Noise: 22963587.144899514
+Cols_RMSE_Score:*N_SCell_RSRP_Noise ,N_PCell_RSRQ_Noise , N_PCell_RSRQ_max_bin: 21961615.84288704
+Cols_RMSE_Score:N_PCell_RSRQ_max_bin ,*N_PCell_RSRP_Noise ,**N_SCell_RSSI_Noise: 21563325.468867786
+Cols_RMSE_Score:*N_SCell_RSRP_Noise ,***N_PCell_RSRQ_Noise ,**N_PCell_RSSI_Noise: 22423130.703273542
+Cols_RMSE_Score:N_SCell_RSRP_max_bin ,**N_PCell_RSSI_Noise ,***N_SCell_RSRQ_Noise: 23237796.646288533
+
+*[N_PCell_RSRP_Noise, N_SCell_RSSI_Noise, N_PCell_RSRQ_Noise]
+
+
+Cols_RMSE_Score:*N_SCell_RSRP_Noise , **N_PCell_RSSI_Noise , N_SCell_RSRP_max_bin , N_PCell_RSRQ_max_bin: 20539116.463058505
+Cols_RMSE_Score:N_SCell_RSSI_Noise , N_SCell_RSRQ_max_bin , N_PCell_RSRP_Noise , N_PCell_RSRP_max_bin: 21644778.830649555
+Cols_RMSE_Score:N_PCell_RSSI_max_bin , N_SCell_RSRQ , N_PCell_RSRQ_max_bin ,*N_SCell_RSRP_Noise: 21839316.75568155
+Cols_RMSE_Score:*N_SCell_RSRP_Noise , N_PCell_RSRQ_Noise , **N_PCell_RSSI_Noise , N_SCell_RSRQ: 20873626.653843172
+Cols_RMSE_Score:N_PCell_RSRP_Noise , N_PCell_RSRQ , N_SCell_RSSI_Noise , N_SCell_RSRQ_max_bin: 21154751.669469204
+
+*[N_SCell_RSRP_Noise, N_PCell_RSSI_Noise]
+
+Cols_RMSE_Score:*PCell_Downlink_Average_MCS , N_PCell_RSRP_max_bin , PCell_Cell_Identity , **PCell_Downlink_Num_RBs, N_SCell_RSRQ_Noise, SCell_freq_MHz , SCell_RSRQ_max , SCell_Downlink_Average_MCS: 11940932.885400506
+Cols_RMSE_Score:N_PCell_RSRQ , *PCell_Downlink_Average_MCS , PCell_Cell_Identity , N_PCell_RSRP_Noise , N_SCell_RSRP_max_bin , N_SCell_RSRQ_Noise, SCell_Downlink_Num_RBs , SCell_RSSI_max: 12854419.85279272
+Cols_RMSE_Score:PCell_SNR_max ,**PCell_Downlink_Num_RBs , N_PCell_RSRQ_max_bin , PCell_freq_MHz , SCell_RSRQ_max , SCell_RSRP_max , N_SCell_RSRQ_max_bin , SCell_Downlink_Average_MCS: 12369965.23037245
+Cols_RMSE_Score:N_PCell_RSRQ_Noise , *PCell_Downlink_Average_MCS , N_PCell_RSSI_Noise ,**PCell_Downlink_Num_RBs , SCell_Downlink_Num_RBs , N_SCell_RSSI_Noise , SCell_Cell_Identity , N_SCell_RSSI_max_bin: 11185653.69738519
+
+*[PCell_Downlink_Average_MCS, PCell_Downlink_Num_RBs] apparently this works better with other features 
+

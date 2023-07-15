@@ -1,0 +1,44 @@
+VARIABLENAME,VARIABLE DESCRIPTION
+id,Unique ID for each row
+timestamp,Unix timestamp in seconds
+device,ID of the vehicle carrying the UE
+PCell_RSRP_max,Maximum reference signal received power in dBm from the primary cell
+PCell_RSRQ_max,Maximum reference signal received quality in dB from the primary cell
+PCell_RSSI_max,Maximum received signal strength indicator in dBm from the primary cell
+PCell_SNR_max,Maximum signal to noise ratio in dB from the primary cell
+PCell_Downlink_Num_RBs,Aggregated number of received resource blocks in downlink from the primary cell
+PCell_Downlink_TB_Size,Aggregated transport block size in downlink from the primary cell
+PCell_Downlink_Average_MCS,Average modulation and coding scheme weighted by received resource blocks from the primary cell
+PCell_Downlink_bandwidth_MHz,Downlink bandwidth in MHz from the primary cell
+PCell_Cell_Identity,Cell ID of the primary cell 
+PCell_freq_MHz,Carrier frequency in MHz of the primary cell
+SCell_RSRP_max,Maximum reference signal received power in dBm from the secondary cell
+SCell_RSRQ_max,Maximum reference signal received quality in dB from the secondary cell
+SCell_RSSI_max,Maximum received signal strength indicator in dBm from the secondary cell
+SCell_SNR_max,Maximum signal to noise ratio in dB from the secondary cell
+SCell_Downlink_Num_RBs,Aggregated number of received resource blocks in downlink from the secondary cell
+SCell_Downlink_TB_Size,Aggregated transport block size in downlink from the secondary cell
+SCell_Downlink_Average_MCS,Average modulation and coding scheme weighted by received resource blocks from the secondary cell
+SCell_Downlink_bandwidth_MHz,Downlink bandwidth in MHz from the secondary cell
+SCell_Cell_Identity,Cell ID of the secondary cell 
+SCell_freq_MHz,Carrier frequency in MHz of the secondary cell
+operator,ID of the operator
+Latitude,GPS latitude of the vehicle
+Longitude,GPS longitude of the vehicle
+Altitude,GPS altitude of the vehicle
+speed_kmh,GPS-based speed of the vehicle in km/h
+COG,GPS-based course over ground of the vehicle
+precipIntensity,Precipitation intensity
+precipProbability,Precipitation probability
+temperature,Temperature
+apparentTemperature,Apparent temperature
+dewPoint,Dew point
+humidity,Humidity
+pressure,Atmospheric pressure
+windSpeed,Wind speed
+cloudCover,Cloud cover
+uvIndex,Ultraviolet index
+visibility,Visibility due to weather conditions
+Traffic Jam Factor,Factor of traffic congestion (a higher factor corresponds to heavier traffic)
+area,Categorical urban area among Avenue/Park/Residential/Highway/Tunnel
+target,Prediction target: downlink datarate in bits per second
